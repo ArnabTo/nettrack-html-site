@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nettracking</title>
+    <link rel="stylesheet" href="css/main.css"/>
+</head>
+<body class="font-inter dark:bg-[#12141D]">
+    <!-- navbar -->
+    <nav class="navbar my-7">
+        <div class="navbar-container mx-5 lg:mx-32">
+            <!-- larger device navbar -->
+            <div class="hidden xl:block">
+                <div class="nav-items flex justify-between items-center">
+                    <div class="flex justify-between items-center gap-24">
+                        <div class="nav-logo flex gap-1 transition-all delay-75">
+                            <p class="text-white text-2xl font-semibold">Nettracking</p>
+                            <div>
+                                <p>Toggler</p>
+                            </div>
+                        </div>
+                        <div class="nav-menues">
+                            <ul class="flex">
+                                <li class="text-white font-medium text-lg mr-12 cursor-pointer transition-all delay-75 active:text-white">
+                                    Features</li>
+                                <li class="text-[#A0A1A5] font-medium text-lg mr-12 cursor-pointer transition-all delay-75 hover:text-white">
+                                    Pricing</li>
+                                <li class="text-[#A0A1A5] font-medium text-lg mr-12 cursor-pointer transition-all delay-75 hover:text-white">How
+                                    it works</li>
+                                <li class="text-[#A0A1A5] font-medium text-lg mr-12 cursor-pointer transition-all delay-75 hover:text-white">
+                                    Knowledge</li>
+                                <li class="text-[#A0A1A5] font-medium text-lg mr-12 cursor-pointer transition-all delay-75 hover:text-white">FAQ
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="flex flex-row gap-5">
+                        <button
+                            class="bg-[#1D1F29] text-white px-4 py-2 rounded-md text-lg font-semibold hover:bg-white hover:text-[#12141D] transition-all delay-75">Sign
+                            in</button>
+                        <button class="bg-white text-[#12141D] px-4 py-2 rounded-md text-lg font-semibold transition-all delay-75">Sign
+                            up</button>
+                    </div>
+                </div>
+            </div>
+            <!-- small device nav -->
+            <div class="block xl:hidden">
+                <div class="flex justify-between">
+                    <div class="nav-logo flex gap-1">
+                        <p class="text-white text-base font-semibold">Nettracking</p>
+                        <div>
+                            <p>Toggler</p>
+                        </div>
+                    </div>
+                    <div>
+                        <button aria-label="Menu" class="menu-toggler text-white">
+                            <svg width="26" height="20" viewBox="0 0 26 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1H25" stroke="#FFFEFF" stroke-width="1.5" stroke-linecap="round" />
+                                <path d="M1 10H25" stroke="#FFFEFF" stroke-width="1.5" stroke-linecap="round" />
+                                <path d="M1 19H25" stroke="#FFFEFF" stroke-width="1.5" stroke-linecap="round" />
+                            </svg>
+                        </button>
+                        <div
+                            class="hamburger-menu flex flex-col gap-3 absolute top-20 right-1 w-full mx-auto p-5 hidden">
+                            <div class="bg-[#1D1F29] p-5 rounded-md">
+                                <div class="nav-menues">
+                                    <ul class="flex flex-col gap-1">
+                                        <li class="text-white font-medium text-lg mr-8 transition-all delay-75 active:text-white">Features</li>
+                                        <li
+                                            class="text-[#A0A1A5] font-medium text-lg mr-8 my-2 cursor-pointer transition-all delay-75 hover:text-white">
+                                            Pricing</li>
+                                        <li
+                                            class="text-[#A0A1A5] font-medium text-lg mr-8 my-2 cursor-pointer transition-all delay-75 hover:text-white">
+                                            How it works</li>
+                                        <li
+                                            class="text-[#A0A1A5] font-medium text-lg mr-8 my-2 cursor-pointer transition-all delay-75 hover:text-white">
+                                            Knowledge</li>
+                                        <li
+                                            class="text-[#A0A1A5] font-medium text-lg mr-8 my-2 cursor-pointer transition-all delay-75 hover:text-white">
+                                            FAQ</li>
+                                    </ul>
+                                </div>
+                                <div class="flex justify-between flex-row gap-5">
+                                    <button
+                                        class="bg-[#1D1F29] text-white px-4 py-3 rounded-md text-lg font-semibold transition-all delay-75 hover:bg-white hover:text-[#12141D]">Sign
+                                        in</button>
+                                    <button
+                                        class="bg-white text-[#12141D] px-4 py-2 rounded-md text-lg font-semibold transition-all delay-75">Sign
+                                        up</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <script src="js/setting.js"></script>
+</body>
+</html>
