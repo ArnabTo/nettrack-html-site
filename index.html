@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nettracking</title>
-    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="css/main.css" />
 </head>
+
 <body class="font-inter dark:bg-[#12141D]">
+    <!-- backgrop -->
+    <div class="absolute top-80 lg:left-96 -z-50 w-[200px] lg:w-[366px] h-[366px] blur-[150px] bg-[#ff19001e]"></div>
     <!-- navbar -->
-    <nav class="navbar my-7">
+    <nav class="navbar my-8">
         <div class="navbar-container mx-5 lg:mx-32">
             <!-- larger device navbar -->
             <div class="hidden xl:block">
@@ -22,15 +26,22 @@
                         </div>
                         <div class="nav-menues">
                             <ul class="flex">
-                                <li class="text-white font-medium text-lg mr-12 cursor-pointer transition-all delay-75 active:text-white">
+                                <li
+                                    class="text-white font-medium text-lg mr-12 cursor-pointer transition-all delay-75 active:text-white">
                                     Features</li>
-                                <li class="text-[#A0A1A5] font-medium text-lg mr-12 cursor-pointer transition-all delay-75 hover:text-white">
+                                <li
+                                    class="text-[#A0A1A5] font-medium text-lg mr-12 cursor-pointer transition-all delay-75 hover:text-white">
                                     Pricing</li>
-                                <li class="text-[#A0A1A5] font-medium text-lg mr-12 cursor-pointer transition-all delay-75 hover:text-white">How
+                                <li
+                                    class="text-[#A0A1A5] font-medium text-lg mr-12 cursor-pointer transition-all delay-75 hover:text-white">
+                                    How
                                     it works</li>
-                                <li class="text-[#A0A1A5] font-medium text-lg mr-12 cursor-pointer transition-all delay-75 hover:text-white">
+                                <li
+                                    class="text-[#A0A1A5] font-medium text-lg mr-12 cursor-pointer transition-all delay-75 hover:text-white">
                                     Knowledge</li>
-                                <li class="text-[#A0A1A5] font-medium text-lg mr-12 cursor-pointer transition-all delay-75 hover:text-white">FAQ
+                                <li
+                                    class="text-[#A0A1A5] font-medium text-lg mr-12 cursor-pointer transition-all delay-75 hover:text-white">
+                                    FAQ
                                 </li>
                             </ul>
                         </div>
@@ -39,7 +50,8 @@
                         <button
                             class="bg-[#1D1F29] text-white px-4 py-2 rounded-md text-lg font-semibold hover:bg-white hover:text-[#12141D] transition-all delay-75">Sign
                             in</button>
-                        <button class="bg-white text-[#12141D] px-4 py-2 rounded-md text-lg font-semibold transition-all delay-75">Sign
+                        <button
+                            class="bg-white text-[#12141D] px-4 py-2 rounded-md text-lg font-semibold transition-all delay-75">Sign
                             up</button>
                     </div>
                 </div>
@@ -67,7 +79,9 @@
                             <div class="bg-[#1D1F29] p-5 rounded-md">
                                 <div class="nav-menues">
                                     <ul class="flex flex-col gap-1">
-                                        <li class="text-white font-medium text-lg mr-8 transition-all delay-75 active:text-white">Features</li>
+                                        <li
+                                            class="text-white font-medium text-lg mr-8 transition-all delay-75 active:text-white">
+                                            Features</li>
                                         <li
                                             class="text-[#A0A1A5] font-medium text-lg mr-8 my-2 cursor-pointer transition-all delay-75 hover:text-white">
                                             Pricing</li>
@@ -97,6 +111,47 @@
             </div>
         </div>
     </nav>
+
+    <!-- Hero section -->
+
+    <div>
+        <div>
+            <div class="w-full lg:w-1/2 mx-auto mt-28 text-center">
+                <h2 class="hidden lg:block mx-auto text-3xl lg:text-5xl lg:leading-[46px] text-white font-bold mb-4">
+                    Content marketing solution & idea of your business</h2>
+                <!-- mobile  -->
+                <h2 class="lg:hidden mx-auto text-3xl lg:text-5xl lg:leading-[46px] text-white font-bold mb-4">Content
+                    marketing </br>solution &</br> idea of your business</h2>
+                <p class="hidden lg:block w-[60%] mx-auto text-center text-[#87888D] font-normal text-xl mb-5">
+                    Nettracking is a content
+                    marketing solution that tracks the effectiveness of your blog,
+                </p>
+                <!-- mobile  -->
+                <p class=" mx-auto text-center text-[#87888D] font-normal text-LG mb-5">Nettracking is a content
+                    marketing solution </br> that tracks the effectiveness of your blog,
+                </p>
+                <div class="flex justify-center gap-4">
+                    <button
+                        class="flex justify-center items-center gap-2 bg-[#FF664F] text-white px-4 lg:py-3 rounded-md text-sm lg:text-lg font-semibold transition-all delay-75 hover:bg-white hover:text-[#12141D]">
+                        Explore Platform
+                        <svg viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-3 lg:w-4 h-3 lg:h-4">
+                            <path
+                                d="M0.48084 4.65475C0.513574 4.66094 0.546702 4.6638 0.579847 4.6633L6.22369 4.6633L6.10062 4.73004C5.98033 4.79643 5.8709 4.88679 5.77722 4.99702L4.19455 6.84247C3.9861 7.07449 3.95108 7.44773 4.11155 7.72682C4.29831 8.02423 4.65647 8.0888 4.91154 7.87103C4.93215 7.85343 4.95174 7.83424 4.97014 7.81359L7.83212 4.47642C8.05579 4.21591 8.05598 3.79332 7.83257 3.53252C7.83243 3.53235 7.83227 3.53216 7.83212 3.532L4.97014 0.194825C4.7463 -0.0654532 4.38388 -0.0648696 4.16065 0.196139C4.14308 0.216684 4.12668 0.238542 4.11155 0.261568C3.95108 0.540661 3.9861 0.913902 4.19454 1.14592L5.77436 2.99471C5.85834 3.09274 5.9549 3.17494 6.06056 3.23833L6.23228 3.32843L0.611346 3.32843C0.318941 3.31577 0.0624004 3.55394 0.00746834 3.88908C-0.043135 4.25293 0.168795 4.59572 0.48084 4.65475Z"
+                                fill="white" />
+                        </svg>
+                    </button>
+                    <button
+                        class="bg-[#1D1F29] text-white px-4 py-3 rounded-md text-sm lg:text-lg font-semibold transition-all delay-75 hover:bg-white hover:text-[#12141D]">Learn
+                        More
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
     <script src="js/setting.js"></script>
 </body>
+
 </html>
