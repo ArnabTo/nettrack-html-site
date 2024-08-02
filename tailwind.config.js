@@ -5,6 +5,7 @@ module.exports = {
     extend: {
      fontSize:{
       '4.5xl': ['2.62rem'],
+      'xxs' : ['0.5rem']
      },
      padding:{
       '22' : ['88px']
