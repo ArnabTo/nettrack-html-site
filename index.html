@@ -11,124 +11,121 @@
 <body class="font-inter dark:bg-[#12141D]">
     <!-- backgrop -->
     <div class="absolute top-80 lg:left-96 -z-50 w-[200px] lg:w-[366px] h-[366px] blur-[150px] bg-[#ff19001e]"></div>
-    <!-- navbar -->
-    <nav class="navbar my-8">
-        <div class="navbar-container mx-5 lg:mx-32">
-            <!-- larger device navbar -->
-            <div class="hidden xl:block">
-                <div class="nav-items flex justify-between items-center">
-                    <div class="flex justify-between items-center gap-24">
-                        <div class="nav-logo flex gap-1 transition-all delay-75">
-                            <p class="text-white text-2xl font-semibold">Nettracking</p>
+    <header>
+        <!-- navbar -->
+        <nav class="navbar">
+            <div class="navbar-container mx-5 lg:mx-32 my-4">
+                <!-- larger device navbar -->
+                <div class="hidden xl:block">
+                    <div class="nav-items flex justify-between items-center">
+                        <div class="flex justify-between items-center gap-24">
+                            <div class="nav-logo flex gap-1 transition-all delay-75">
+                                <p class="text-white text-2xl font-semibold">Nettracking</p>
+                                <div>
+                                    <p>Toggler</p>
+                                </div>
+                            </div>
+                            <div class="nav-menues">
+                                <ul class="flex">
+                                    <li
+                                        class="text-white font-medium text-lg mr-12 cursor-pointer transition-all delay-75 active:text-white">
+                                        <a href="#features">Features</a>
+                                    </li>
+                                    <li
+                                        class="text-[#A0A1A5] font-medium text-lg mr-12 cursor-pointer transition-all delay-75 hover:text-white">
+                                        Pricing</li>
+                                    <li
+                                        class="text-[#A0A1A5] font-medium text-lg mr-12 cursor-pointer transition-all delay-75 hover:text-white">
+                                        How
+                                        it works</li>
+                                    <li
+                                        class="text-[#A0A1A5] font-medium text-lg mr-12 cursor-pointer transition-all delay-75 hover:text-white">
+                                        Knowledge</li>
+                                    <li
+                                        class="text-[#A0A1A5] font-medium text-lg mr-12 cursor-pointer transition-all delay-75 hover:text-white">
+                                        FAQ
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="flex flex-row gap-5">
+                            <button
+                                class="bg-[#1D1F29] text-white px-4 py-2 rounded-md text-lg font-semibold hover:bg-white hover:text-[#12141D] transition-all delay-75">Sign
+                                in</button>
+                            <button
+                                class="bg-white text-[#12141D] px-4 py-2 rounded-md text-lg font-semibold transition-all delay-75">Sign
+                                up</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- small device nav -->
+                <div class="block xl:hidden">
+                    <div class="flex justify-between">
+                        <div class="nav-logo flex gap-1">
+                            <p class="text-white text-base font-semibold">Nettracking</p>
                             <div>
                                 <p>Toggler</p>
                             </div>
                         </div>
-                        <div class="nav-menues">
-                            <ul class="flex">
-                                <li
-                                    class="text-white font-medium text-lg mr-12 cursor-pointer transition-all delay-75 active:text-white">
-                                  <a href="#features">Features</a></li>
-                                <li
-                                    class="text-[#A0A1A5] font-medium text-lg mr-12 cursor-pointer transition-all delay-75 hover:text-white">
-                                    Pricing</li>
-                                <li
-                                    class="text-[#A0A1A5] font-medium text-lg mr-12 cursor-pointer transition-all delay-75 hover:text-white">
-                                    How
-                                    it works</li>
-                                <li
-                                    class="text-[#A0A1A5] font-medium text-lg mr-12 cursor-pointer transition-all delay-75 hover:text-white">
-                                    Knowledge</li>
-                                <li
-                                    class="text-[#A0A1A5] font-medium text-lg mr-12 cursor-pointer transition-all delay-75 hover:text-white">
-                                    FAQ
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="flex flex-row gap-5">
-                        <button
-                            class="bg-[#1D1F29] text-white px-4 py-2 rounded-md text-lg font-semibold hover:bg-white hover:text-[#12141D] transition-all delay-75">Sign
-                            in</button>
-                        <button
-                            class="bg-white text-[#12141D] px-4 py-2 rounded-md text-lg font-semibold transition-all delay-75">Sign
-                            up</button>
-                    </div>
-                </div>
-            </div>
-            <!-- small device nav -->
-            <div class="block xl:hidden">
-                <div class="flex justify-between">
-                    <div class="nav-logo flex gap-1">
-                        <p class="text-white text-base font-semibold">Nettracking</p>
                         <div>
-                            <p>Toggler</p>
-                        </div>
-                    </div>
-                    <div>
-                        <button aria-label="Menu" class="menu-toggler text-white">
-                            <svg width="26" height="20" viewBox="0 0 26 20" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1 1H25" stroke="#FFFEFF" stroke-width="1.5" stroke-linecap="round" />
-                                <path d="M1 10H25" stroke="#FFFEFF" stroke-width="1.5" stroke-linecap="round" />
-                                <path d="M1 19H25" stroke="#FFFEFF" stroke-width="1.5" stroke-linecap="round" />
-                            </svg>
-                        </button>
-                        <div
-                            class="hamburger-menu flex flex-col gap-3 absolute top-20 right-1 w-full mx-auto p-5 hidden">
-                            <div class="bg-[#1D1F29] p-5 rounded-md">
-                                <div class="nav-menues">
-                                    <ul class="flex flex-col gap-1">
-                                        <li
-                                            class="text-white font-medium text-lg mr-8 transition-all delay-75 active:text-white">
-                                            Features</li>
-                                        <li
-                                            class="text-[#A0A1A5] font-medium text-lg mr-8 my-2 cursor-pointer transition-all delay-75 hover:text-white">
-                                            Pricing</li>
-                                        <li
-                                            class="text-[#A0A1A5] font-medium text-lg mr-8 my-2 cursor-pointer transition-all delay-75 hover:text-white">
-                                            How it works</li>
-                                        <li
-                                            class="text-[#A0A1A5] font-medium text-lg mr-8 my-2 cursor-pointer transition-all delay-75 hover:text-white">
-                                            Knowledge</li>
-                                        <li
-                                            class="text-[#A0A1A5] font-medium text-lg mr-8 my-2 cursor-pointer transition-all delay-75 hover:text-white">
-                                            FAQ</li>
-                                    </ul>
-                                </div>
-                                <div class="flex justify-between flex-row gap-5">
-                                    <button
-                                        class="bg-[#1D1F29] text-white px-4 py-3 rounded-md text-lg font-semibold transition-all delay-75 hover:bg-white hover:text-[#12141D]">Sign
-                                        in</button>
-                                    <button
-                                        class="bg-white text-[#12141D] px-4 py-2 rounded-md text-lg font-semibold transition-all delay-75">Sign
-                                        up</button>
+                            <button aria-label="Menu" class="menu-toggler text-white">
+                                <svg width="26" height="20" viewBox="0 0 26 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 1H25" stroke="#FFFEFF" stroke-width="1.5" stroke-linecap="round" />
+                                    <path d="M1 10H25" stroke="#FFFEFF" stroke-width="1.5" stroke-linecap="round" />
+                                    <path d="M1 19H25" stroke="#FFFEFF" stroke-width="1.5" stroke-linecap="round" />
+                                </svg>
+                            </button>
+                            <div
+                                class="hamburger-menu flex flex-col gap-3 absolute top-20 right-1 w-full mx-auto p-5 hidden">
+                                <div class="bg-[#1D1F29] p-5 rounded-md">
+                                    <div class="nav-menues">
+                                        <ul class="flex flex-col gap-1">
+                                            <li
+                                                class="text-white font-medium text-lg mr-12 cursor-pointer transition-all delay-75 active:text-white">
+                                                <a href="#features">Features</a>
+                                            </li>
+                                            <li
+                                                class="text-[#A0A1A5] font-medium text-lg mr-8 my-2 cursor-pointer transition-all delay-75 hover:text-white">
+                                                Pricing</li>
+                                            <li
+                                                class="text-[#A0A1A5] font-medium text-lg mr-8 my-2 cursor-pointer transition-all delay-75 hover:text-white">
+                                                How it works</li>
+                                            <li
+                                                class="text-[#A0A1A5] font-medium text-lg mr-8 my-2 cursor-pointer transition-all delay-75 hover:text-white">
+                                                Knowledge</li>
+                                            <li
+                                                class="text-[#A0A1A5] font-medium text-lg mr-8 my-2 cursor-pointer transition-all delay-75 hover:text-white">
+                                                FAQ</li>
+                                        </ul>
+                                    </div>
+                                    <div class="flex justify-between flex-row gap-5">
+                                        <button
+                                            class="bg-[#1D1F29] text-white px-4 py-3 rounded-md text-lg font-semibold transition-all delay-75 hover:bg-white hover:text-[#12141D]">Sign
+                                            in</button>
+                                        <button
+                                            class="bg-white text-[#12141D] px-4 py-2 rounded-md text-lg font-semibold transition-all delay-75">Sign
+                                            up</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </nav>
+        </nav>
 
-    <!-- Hero section -->
+        <!-- Hero section -->
 
-    <div>
-        <div>
+        <div id="hero">
             <div class="w-full lg:w-1/2 mx-auto mt-28 text-center mb-28 ">
-                <h2 class="hidden lg:block mx-auto text-3xl lg:text-5xl lg:leading-[46px] text-white font-bold mb-4">
-                    Content marketing solution & idea of your business</h2>
-                <!-- mobile  -->
-                <h2 class="lg:hidden mx-auto text-4xl md:text-4xl lg:text-5xl lg:leading-[46px] text-white font-bold mb-4">Content
-                    marketing </br>solution &</br> idea of your business</h2>
-                <p class="hidden lg:block w-[60%] mx-auto text-center text-[#87888D] font-normal text-xl mb-5">
-                    Nettracking is a content
-                    marketing solution that tracks the effectiveness of your blog,
-                </p>
-                <!-- mobile  -->
-                <p class=" mx-auto text-center text-[#87888D] font-normal text-sm mb-5">Nettracking is a content
-                    marketing solution </br> that tracks the effectiveness of your blog,
+                <h1 class="text-white mx-auto text-3xl lg:text-5xl md:text-5xl font-bold leading-tight mb-4">
+                    Content marketing <br class="md:hidden"> solution & <br> idea of your business
+                </h1>
+                <p class="hidden lg:block mx-auto text-center text-[#87888D] font-normal text-xl mb-5">
+                    Nettracking is a content marketing solution <br class="md:hidden"> that <br class="hidden lg:block">
+                    tracks
+                    the effectiveness of your blog,
                 </p>
                 <div class="flex justify-center gap-4">
                     <button
@@ -147,51 +144,75 @@
                 </div>
             </div>
         </div>
-    </div>
+    </header>
 
     <!-- features section -->
 
-    <div  id="features">
-        <div class="max-w-6xl mx-auto mb-28">
-            <h2 class="text-4.5xl text-center text-white font-bold mb-3">Key features</h2>
-            <p class="w-full lg:w-1/2 mx-auto px-3 lg:px-5 text-[#808188] text-lg text-center font-normal mb-24">NetTracking™ has quickly become the go-to content marketing solution for over 600 clients around the world</p>
+    <section id="features" class="max-w-6xl mx-auto mb-28">
+        <h2 class="text-4.5xl text-center text-white font-bold mb-3">Key features</h2>
+        <p class="w-full lg:w-1/2 mx-auto px-3 lg:px-5 text-[#808188] text-lg text-center font-normal mb-24">
+            NetTracking™ has quickly become the go-to content marketing solution for over 600 clients around the world
+        </p>
         <div class="bg-[#1E2029] px-5 lg:px-22 py-20 rounded-2xl">
             <div class="grid grid-cols-2 lg:grid-cols-3 gap-1 lg:gap-5">
-                <div class="text-start lg:px-6 mb-5 lg:mb-14">
-                    <img class="mb-3 lg:mb-6" src="/assets/icon-2.png" alt="feature logo"/>
+                <article class="text-start lg:px-6 mb-5 lg:mb-14">
+                    <img class="mb-3 lg:mb-6" src="/assets/icon-2.png" alt="Real-Time Email Alerts icon" />
                     <h3 class="text-xl text-white font-semibold mb-2">Real-Time Email Alerts</h3>
-                    <p class="text-sm lg:text-base text-[#696B76] font-normal lg:pr-3">NetTracking" is a very powerful Web 2.0 site search engine allows you to find  email allerts.</p>
-                </div>
-                <div class="text-start lg:px-6 mb-5 lg:mb-14">
-                    <img class="mb-3 lg:mb-6" src="/assets/icon-5.png" alt="feature logo"/>
+                    <p class="text-sm lg:text-base text-[#696B76] font-normal lg:pr-3">
+                        NetTracking™ is a very powerful Web 2.0 site search engine that allows you to find email alerts.
+                    </p>
+                </article>
+                <article class="text-start lg:px-6 mb-5 lg:mb-14">
+                    <img class="mb-3 lg:mb-6" src="/assets/icon-5.png" alt="Monitor Inbound Traffic icon" />
                     <h3 class="text-xl text-white font-semibold mb-2">Monitor Inbound Traffic</h3>
-                    <p class="text-sm lg:text-base text-[#696B76] font-normal lg:pr-3">The biggest challenge for marketers is being heard inbound traffice in market.</p>
-                </div>
-                <div class="text-start lg:px-6 mb-5 lg:mb-14">
-                    <img class="mb-3 lg:mb-6" src="/assets/icon-4.png" alt="feature logo"/>
+                    <p class="text-sm lg:text-base text-[#696B76] font-normal lg:pr-3">
+                        The biggest challenge for marketers is being heard among inbound traffic in the market.
+                    </p>
+                </article>
+                <article class="text-start lg:px-6 mb-5 lg:mb-14">
+                    <img class="mb-3 lg:mb-6" src="/assets/icon-4.png" alt="Track Multiple Sites icon" />
                     <h3 class="text-xl text-white font-semibold mb-2">Track Multiple Sites</h3>
-                    <p class="text-sm lg:text-base text-[#696B76] font-normal lg:pr-3">Nettracking gives you an innovative web-based tool that manages multiple sites.</p>
-                </div>
-                <div class="text-start lg:px-6">
-                    <img class="mb-3 lg:mb-6" src="/assets/icon-3.png" alt="feature logo"/>
+                    <p class="text-sm lg:text-base text-[#696B76] font-normal lg:pr-3">
+                        NetTracking™ gives you an innovative web-based tool that manages multiple sites.
+                    </p>
+                </article>
+                <article class="text-start lg:px-6">
+                    <img class="mb-3 lg:mb-6" src="/assets/icon-3.png" alt="Aggregate Statistics icon" />
                     <h3 class="text-xl text-white font-semibold mb-2">Aggregate Statistics</h3>
-                    <p class="text-sm lg:text-base text-[#696B76] font-normal lg:pr-3">filters and reports on your website's search engine ranking results.</p>
-                </div>
-                <div class="text-start lg:px-6">
-                    <img class="mb-3 lg:mb-6" src="/assets/icon-2.png" alt="feature logo"/>
+                    <p class="text-sm lg:text-base text-[#696B76] font-normal lg:pr-3">
+                        Filters and reports on your website's search engine ranking results.
+                    </p>
+                </article>
+                <article class="text-start lg:px-6">
+                    <img class="mb-3 lg:mb-6" src="/assets/icon-2.png" alt="Edit Exclude icon" />
                     <h3 class="text-xl text-white font-semibold mb-2">Edit Exclude</h3>
-                    <p class="text-sm lg:text-base text-[#696B76] font-normal lg:pr-3">In short, nettracking gives you the information that allows you to changes in your website's ranking.</p>
-                </div>
-                <div class="text-start lg:px-6">
-                    <img class="mb-3 lg:mb-6" src="/assets/icon-2.png" alt="feature logo"/>
+                    <p class="text-sm lg:text-base text-[#696B76] font-normal lg:pr-3">
+                        NetTracking™ gives you the information that allows you to make changes to your website's
+                        ranking.
+                    </p>
+                </article>
+                <article class="text-start lg:px-6">
+                    <img class="mb-3 lg:mb-6" src="/assets/icon-2.png" alt="Easy To Implement icon" />
                     <h3 class="text-xl text-white font-semibold mb-2">Easy To Implement</h3>
-                    <p class="text-sm lg:text-base text-[#696B76] font-normal lg:pr-3">Accurately track organic (or natural) search engine movement over time.</p>
-                </div>
+                    <p class="text-sm lg:text-base text-[#696B76] font-normal lg:pr-3">
+                        Accurately track organic (or natural) search engine movement over time.
+                    </p>
+                </article>
             </div>
         </div>
-        </div>
-    </div>
+    </section>
 
+    <!-- creative solution section -->
+
+    <section>
+        <div>
+            <h2>Creative solutions to expand your business!</h2>
+            <p>Nettracking is designed with an integrated tracking system that allows customers to track their package
+            </p>
+            <div></div>
+            <div></div>
+        </div>
+    </section>
 
     <script src="js/setting.js"></script>
 </body>
