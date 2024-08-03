@@ -1,3 +1,4 @@
+import KeenSlider from 'https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/+esm';
 const menuToggler = document.getElementsByClassName('menu-toggler')[0];
 const mobileMenu = document.getElementsByClassName('hamburger-menu')[0];
 
@@ -10,10 +11,9 @@ window.addEventListener('scroll', () => {
     const menueItem = document.getElementsByClassName('sticky-item');
     const navbarContainer = document.getElementsByClassName('navbar-container')[0];
     const hero = document.getElementById('hero');
-     
+    const svgPaths = document.getElementsByClassName('.menu-toggler > svg path');
     const heroHeight = hero.offsetHeight;
-    console.log(window.scrollY)
-    console.log(heroHeight)
+
 
     if (window.scrollY > heroHeight) {
         navbar.style.position = 'fixed';
@@ -26,6 +26,10 @@ window.addEventListener('scroll', () => {
         for (let item of menueItem) {
             item.style.color = 'black';
         }
+
+        for (let path of svgPaths) {
+          path.setAttribute('stroke', 'black'); 
+      }
     } else {
         navbar.style.position = '';
         navbar.style.top = '';
@@ -38,11 +42,12 @@ window.addEventListener('scroll', () => {
             item.style.color = '';
         }
     }
+    for (let path of svgPaths) {
+      path.setAttribute('stroke', '#ffff'); 
+  }
 
 })
 
-
-import KeenSlider from 'https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/+esm'
 
 const keenSlider = new KeenSlider(
   '#keen-slider',
@@ -66,8 +71,3 @@ const keenSlider = new KeenSlider(
   []
 )
 
-const keenSliderPrevious = document.getElementById('keen-slider-previous')
-const keenSliderNext = document.getElementById('keen-slider-next')
-
-keenSliderPrevious.addEventListener('click', () => keenSlider.prev())
-keenSliderNext.addEventListener('click', () => keenSlider.next())

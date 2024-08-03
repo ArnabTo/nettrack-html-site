@@ -20,10 +20,32 @@
                 <div class="hidden xl:block">
                     <div class="nav-items flex justify-between items-center">
                         <div class="flex justify-between items-center gap-24">
-                            <div class="nav-logo flex gap-1 transition-all delay-75">
+                            <div class="nav-logo flex items-center gap-1 transition-all delay-75">
                                 <p class="sticky-item text-white text-2xl font-semibold">Nettracking</p>
-                                <div>
-                                    <p>Toggler</p>
+                                <div class="flex items-center mt-2">
+                                    <label for="AcceptConditions"
+                                        class="relative inline-block h-8 w-14 cursor-pointer rounded-full bg-[#2A2B33] transition [-webkit-tap-highlight-color:_transparent] has-[:checked]:bg-green-500">
+                                        <input type="checkbox" id="AcceptConditions"
+                                            class="peer sr-only [&:checked_+_span_svg[data-checked-icon]]:block [&:checked_+_span_svg[data-unchecked-icon]]:hidden" />
+
+                                        <span
+                                            class="absolute inset-y-0 start-0 z-10 m-1 inline-flex size-6 items-center justify-center rounded-full bg-white text-gray-400 transition-all peer-checked:start-6 peer-checked:text-green-600">
+                                            <!-- <svg data-unchecked-icon xmlns="http://www.w3.org/2000/svg" class="h-4 w-4"
+                                                viewBox="0 0 20 20" fill="currentColor">
+                                                <path fill-rule="evenodd"
+                                                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                                    clip-rule="evenodd" />
+                                            </svg> -->
+
+                                            <svg width="15" height="15" viewBox="0 0 8 8" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M6.91811 6.81362C7.46774 6.264 7.82628 5.59572 7.99392 4.89124C8.04193 4.68945 7.79393 4.55321 7.64762 4.70024C7.64583 4.70206 7.64403 4.70385 7.64223 4.70565C6.41936 5.92853 4.42202 5.90495 3.229 4.63492C2.10425 3.43756 2.11902 1.57867 3.26118 0.397922C3.27559 0.383036 3.2901 0.368325 3.30473 0.353789C3.45143 0.208037 3.31431 -0.0388342 3.11312 0.00897873C2.4149 0.174909 1.75219 0.528341 1.20524 1.06946C-0.393934 2.65162 -0.402941 5.21679 1.18557 6.80963C2.76714 8.39553 5.33488 8.39684 6.91811 6.81362Z"
+                                                    fill="#2A2B33" />
+                                            </svg>
+
+                                        </span>
+                                    </label>
                                 </div>
                             </div>
                             <div class="nav-menues">
@@ -34,17 +56,22 @@
                                     </li>
                                     <li
                                         class="sticky-item text-[#A0A1A5] font-medium text-lg mr-12 cursor-pointer transition-all delay-75 hover:scale-105">
-                                        Pricing</li>
+                                        <a href="#pricing">Pricing</a>
+                                    </li>
                                     <li
                                         class="sticky-item text-[#A0A1A5] font-medium text-lg mr-12 cursor-pointer transition-all delay-75 hover:scale-105">
-                                        How
-                                        it works</li>
+                                        <a href="#how-it-works">
+                                            How
+                                            it works
+                                        </a>
+                                    </li>
                                     <li
                                         class="sticky-item text-[#A0A1A5] font-medium text-lg mr-12 cursor-pointer transition-all delay-75 hover:scale-105">
-                                        Knowledge</li>
+                                        <a href="#solution">Knowledge</a>
+                                    </li>
                                     <li
                                         class="sticky-item text-[#A0A1A5] font-medium text-lg mr-12 cursor-pointer transition-all delay-75 hover:scale-105">
-                                        FAQ
+                                        <a href="#faq">FAQ</a>
                                     </li>
                                 </ul>
                             </div>
@@ -63,9 +90,24 @@
                 <div class="block xl:hidden">
                     <div class="flex justify-between">
                         <div class="nav-logo flex gap-1">
-                            <p class="text-white text-base font-semibold">Nettracking</p>
-                            <div>
-                                <p>Toggler</p>
+                            <p class="sticky-item text-white text-base font-semibold">Nettracking</p>
+                            <div class="flex items-center">
+                                <label for="AcceptConditions"
+                                    class="relative inline-block h-6 w-12 cursor-pointer rounded-full bg-[#2A2B33] transition [-webkit-tap-highlight-color:_transparent] has-[:checked]:bg-green-500">
+                                    <input type="checkbox" id="AcceptConditions"
+                                        class="peer sr-only [&:checked_+_span_svg[data-checked-icon]]:block [&:checked_+_span_svg[data-unchecked-icon]]:hidden" />
+
+                                    <span
+                                        class="absolute inset-y-0 start-0 z-10 m-1 inline-flex size-4 items-center justify-center rounded-full bg-white text-gray-400 transition-all peer-checked:start-6 peer-checked:text-green-600">
+                                        <svg width="8" height="8" viewBox="0 0 8 8" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M6.91811 6.81362C7.46774 6.264 7.82628 5.59572 7.99392 4.89124C8.04193 4.68945 7.79393 4.55321 7.64762 4.70024C7.64583 4.70206 7.64403 4.70385 7.64223 4.70565C6.41936 5.92853 4.42202 5.90495 3.229 4.63492C2.10425 3.43756 2.11902 1.57867 3.26118 0.397922C3.27559 0.383036 3.2901 0.368325 3.30473 0.353789C3.45143 0.208037 3.31431 -0.0388342 3.11312 0.00897873C2.4149 0.174909 1.75219 0.528341 1.20524 1.06946C-0.393934 2.65162 -0.402941 5.21679 1.18557 6.80963C2.76714 8.39553 5.33488 8.39684 6.91811 6.81362Z"
+                                                fill="#2A2B33" />
+                                        </svg>
+
+                                    </span>
+                                </label>
                             </div>
                         </div>
                         <div>
@@ -83,21 +125,28 @@
                                     <div class="nav-menues">
                                         <ul class="flex flex-col gap-1">
                                             <li
-                                                class="text-white font-medium text-lg mr-12 cursor-pointer transition-all delay-75 active:text-white">
+                                                class=" text-white font-medium text-lg mr-12 cursor-pointer transition-all delay-75 hover:scale-105">
                                                 <a href="#features">Features</a>
                                             </li>
                                             <li
-                                                class="text-[#A0A1A5] font-medium text-lg mr-8 my-2 cursor-pointer transition-all delay-75 hover:text-white">
-                                                Pricing</li>
+                                                class=" text-[#A0A1A5] font-medium text-lg mr-12 cursor-pointer transition-all delay-75 hover:scale-105">
+                                                <a href="#pricing">Pricing</a>
+                                            </li>
                                             <li
-                                                class="text-[#A0A1A5] font-medium text-lg mr-8 my-2 cursor-pointer transition-all delay-75 hover:text-white">
-                                                How it works</li>
+                                                class=" text-[#A0A1A5] font-medium text-lg mr-12 cursor-pointer transition-all delay-75 hover:scale-105">
+                                                <a href="#how-it-works">
+                                                    How
+                                                    it works
+                                                </a>
+                                            </li>
                                             <li
-                                                class="text-[#A0A1A5] font-medium text-lg mr-8 my-2 cursor-pointer transition-all delay-75 hover:text-white">
-                                                Knowledge</li>
+                                                class=" text-[#A0A1A5] font-medium text-lg mr-12 cursor-pointer transition-all delay-75 hover:scale-105">
+                                                <a href="#solution">Knowledge</a>
+                                            </li>
                                             <li
-                                                class="text-[#A0A1A5] font-medium text-lg mr-8 my-2 cursor-pointer transition-all delay-75 hover:text-white">
-                                                FAQ</li>
+                                                class="text-[#A0A1A5] font-medium text-lg mr-12 cursor-pointer transition-all delay-75 hover:scale-105">
+                                                <a href="#faq">FAQ</a>
+                                            </li>
                                         </ul>
                                     </div>
                                     <div class="flex justify-between flex-row gap-5">
@@ -206,7 +255,7 @@
 
     <!-- creative solution section -->
 
-    <section class="max-w-6xl mx-auto mb-28">
+    <section class="max-w-6xl mx-auto mb-28" id="solution">
         <div>
             <h2 class="text-white text-4.5xl font-bold leading-10 text-center mb-4">Creative solutions to <br
                     class="md:hidden"> expand <br class="hidden md:block"> your business!</h2>
@@ -258,7 +307,7 @@
 
     <!-- how it works section -->
 
-    <section class="max-w-6xl mx-auto mb-20 lg:mb-28">
+    <section class="max-w-6xl mx-auto mb-20 lg:mb-28" id="how-it-works">
         <h2 class="text-white text-center font-bold text-2xl lg:text-4.5xl mb-10 lg:mb-16">How it works</h2>
         <div class="bg-[#1E2029] pt-16 px-7 lg:px-40">
             <div class="hidden lg:flex gap-20">
@@ -364,7 +413,7 @@
 
     <!-- price plan -->
 
-    <section class="max-w-6xl mx-auto mb-24">
+    <section class="max-w-6xl mx-auto mb-24" id="pricing">
         <div class="px-7">
             <h2 class="text-2xl lg:text-4.5xl text-center text-white font-bold mb-3">Our pricing plan</h2>
             <p
@@ -502,106 +551,7 @@
 
     <!-- testimonial section -->
 
-    <section class="hidden">
-        <div>
-            <h2 class="text-2xl lg:text-4.5xl text-center text-white font-bold mb-3">Testimonials</h2>
-            <p
-                class="w-full lg:w-1/2 mx-auto px-3 lg:px-5 text-[#808188] text-base lg:text-lg text-center font-normal mb-10 lg:mb-24">
-                Nettracking is a B2B marketing software for telecommunications industry.
-            </p>
-            <div class="flex">
-                <div>
-                    <div class="w-[478px] relative border-2 border-[#313239] pl-8 pt-9 rounded-xl">
-                        <div class="flex absolute top-0 left-80">
-                            <svg width="31" height="37" viewBox="0 0 31 37" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M17.4998 37C24.9557 37 30.9998 30.9558 30.9998 23.5C30.9998 16.0442 24.9557 10 17.4998 10C13.2584 10 9.4738 11.956 6.99889 15.0152C4.49889 10 6.99889 5 8.99889 0H3.99982C-6.49925 31.5 10.5 37 17.4998 37Z"
-                                    fill="#313339" />
-                            </svg>
-                            <svg width="31" height="37" viewBox="0 0 31 37" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M17.4998 37C24.9557 37 30.9998 30.9558 30.9998 23.5C30.9998 16.0442 24.9557 10 17.4998 10C13.2584 10 9.4738 11.956 6.99889 15.0152C4.49889 10 6.99889 5 8.99889 0H3.99982C-6.49925 31.5 10.5 37 17.4998 37Z"
-                                    fill="#313339" />
-                            </svg>
-                        </div>
-                        <img class="mb-6" src="/assets/profile1.png" />
-                        <p class="text-[#696B76] text-base font-medium mb-7">Nettracking is a B2B marketing software for
-                            telecommunications industry. This realtime cloud-based solution tracks your leads and works
-                            on
-                            many</p>
-                        <span>
-                            <h4 class="text-[#CACACA] text-lg font-bold">John Smith</h4>
-                            <p class="text-xs font-medium text-[#696B76] mb-6">Codelabs Digital</p>
-                        </span>
-                    </div>
-                </div>
-                <div class="flex">
-                    <div class="w-[478px] relative border-2 border-[#313239] pl-8 pt-9 rounded-xl">
-                        <div class="flex absolute top-0 left-80">
-                            <svg width="31" height="37" viewBox="0 0 31 37" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M17.4998 37C24.9557 37 30.9998 30.9558 30.9998 23.5C30.9998 16.0442 24.9557 10 17.4998 10C13.2584 10 9.4738 11.956 6.99889 15.0152C4.49889 10 6.99889 5 8.99889 0H3.99982C-6.49925 31.5 10.5 37 17.4998 37Z"
-                                    fill="#313339" />
-                            </svg>
-                            <svg width="31" height="37" viewBox="0 0 31 37" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M17.4998 37C24.9557 37 30.9998 30.9558 30.9998 23.5C30.9998 16.0442 24.9557 10 17.4998 10C13.2584 10 9.4738 11.956 6.99889 15.0152C4.49889 10 6.99889 5 8.99889 0H3.99982C-6.49925 31.5 10.5 37 17.4998 37Z"
-                                    fill="#313339" />
-                            </svg>
-                        </div>
-                        <img class="mb-6" src="/assets/profile1.png" />
-                        <p class="text-[#696B76] text-base font-medium mb-7">Nettracking is a B2B marketing software for
-                            telecommunications industry. This realtime cloud-based solution tracks your leads and works
-                            on
-                            many</p>
-                        <span>
-                            <h4 class="text-[#CACACA] text-lg font-bold">John Smith</h4>
-                            <p class="text-xs font-medium text-[#696B76] mb-6">Codelabs Digital</p>
-                        </span>
-                    </div>
-                    <div class="w-[478px] relative border-2 border-[#313239] pl-8 pt-9 rounded-xl">
-                        <div class="flex absolute top-0 left-80">
-                            <svg width="31" height="37" viewBox="0 0 31 37" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M17.4998 37C24.9557 37 30.9998 30.9558 30.9998 23.5C30.9998 16.0442 24.9557 10 17.4998 10C13.2584 10 9.4738 11.956 6.99889 15.0152C4.49889 10 6.99889 5 8.99889 0H3.99982C-6.49925 31.5 10.5 37 17.4998 37Z"
-                                    fill="#313339" />
-                            </svg>
-                            <svg width="31" height="37" viewBox="0 0 31 37" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M17.4998 37C24.9557 37 30.9998 30.9558 30.9998 23.5C30.9998 16.0442 24.9557 10 17.4998 10C13.2584 10 9.4738 11.956 6.99889 15.0152C4.49889 10 6.99889 5 8.99889 0H3.99982C-6.49925 31.5 10.5 37 17.4998 37Z"
-                                    fill="#313339" />
-                            </svg>
-                        </div>
-                        <img class="mb-6" src="/assets/profile1.png" />
-                        <p class="text-[#696B76] text-base font-medium mb-7">Nettracking is a B2B marketing software for
-                            telecommunications industry. This realtime cloud-based solution tracks your leads and works
-                            on
-                            many</p>
-                        <span>
-                            <h4 class="text-[#CACACA] text-lg font-bold">John Smith</h4>
-                            <p class="text-xs font-medium text-[#696B76] mb-6">Codelabs Digital</p>
-                        </span>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-
-
-
-    <script type="module" src="/js/setting.js">
-
-    </script>
-
-    <section class="mb-10 lg:mb-3">
+    <section class="mb-10 lg:mb-3" id="testimonials">
         <div>
             <h2 class="text-2xl lg:text-4.5xl text-center text-white font-bold mb-3">Our pricing plan</h2>
             <p
@@ -645,7 +595,6 @@
                             </footer>
                         </blockquote>
                     </div>
-
                     <div class="keen-slider__slide">
                         <blockquote
                             class="flex flex-col justify-between shadow-sm pl-9 border-2 border-[#313239] rounded-xl relative">
@@ -679,7 +628,6 @@
                             </footer>
                         </blockquote>
                     </div>
-
                     <div class="keen-slider__slide">
                         <blockquote
                             class="flex flex-col justify-between shadow-sm pl-9 border-2 border-[#313239] rounded-xl relative">
@@ -713,7 +661,6 @@
                             </footer>
                         </blockquote>
                     </div>
-
                 </div>
             </div>
             <div class="flex justify-between mx-7 mb-12">
@@ -741,6 +688,9 @@
                 </div>
             </div>
         </div>
+
+        <!-- testimonial secion mobile -->
+
         <div class="lg:hidden px-5">
             <blockquote
                 class="flex flex-col justify-between shadow-sm pl-9 border-2 bg-[#1E2029] border-transparent rounded-xl relative">
@@ -788,10 +738,9 @@
         </div>
     </section>
 
-
     <!-- faq section -->
 
-    <section class="max-w-6xl mx-auto">
+    <section class="max-w-6xl mx-auto" id="faq">
         <div>
             <h2 class="text-2xl lg:text-4.5xl text-center text-white font-bold mb-3">FAQ</h2>
             <p
@@ -843,11 +792,12 @@
 
     <!-- footer -->
 
-    <footer class="max-w-6xl mx-auto pt-28">
-        <div class="pl-5">
-            <div>
+    <footer class="max-w-6xl mx-auto pt-28 mb-10">
+        <div class="flex flex-col md:flex-row gap-40 pl-5">
+            <div class="lg:mr-20">
                 <h3 class="text-white text-2xl font-bold mb-3">Nettracking</h3>
-                <p class="text-[#696876] text-base font-normal mb-5">We saw our customers <br> confusing us with some of the <br> other companies intheindustry</p>
+                <p class="text-[#696876] text-base font-normal mb-5">We saw our customers <br> confusing us with some of
+                    the <br> other companies intheindustry</p>
                 <span class="flex gap-3 mb-10">
                     <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -866,7 +816,7 @@
                     </svg>
                 </span>
             </div>
-            <div class="flex gap-20">
+            <div class="flex gap-2 lg:gap-40">
                 <div>
                     <h3 class="text-white text-2xl font-bold mb-6">Product</h3>
                     <ul>
@@ -896,9 +846,14 @@
                 </ul>
             </div>
         </div>
+
     </footer>
 
-    <script src="js/setting.js"></script>
+    <div class="bg-[#1E2029] text-center py-4">
+        <p class="text-[#5A5C68] font-normal text-xs">© Copyright 2024 by Codelabs Digital. All right reserved.</p>
+    </div>
+
+    <script type="module" src="js/setting.js"></script>
 </body>
 
 </html>
